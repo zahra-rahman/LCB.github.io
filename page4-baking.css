@@ -1,0 +1,63 @@
+div.jumbotron{
+ background-color: rgb(0,96,165);
+ background-size: 100%;
+}
+h1.display-4{
+  font-weight: bold;
+  color: white;
+}
+h2{
+  color: white;
+}
+
+
+h5{
+  text-align: center;
+  color: black;
+}
+.card-deck{
+  padding-bottom: 3%;
+}
+.column {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card-img-top{
+  height: 400px;
+  width: 100%;
+  padding: 0px;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: rgb(0,96,165);
+}
+.card:hover .overlay {
+  opacity: 0.5;
+}
+#text {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
